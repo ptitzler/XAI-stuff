@@ -18,12 +18,12 @@
 set -x
 
 # valid target repository user or organization ID
-DOCKER_OR_ORG_ID=ptitzler
+#DOCKER_OR_ORG_ID=ptitzler
 
 # existing Docker image name
-IMG_NAME=xai
+#IMG_NAME=xai
 # existing Docker image tag
-IMG_TAG=latest
+#IMG_TAG=latest
 
 # ------- no changes below this line -----------
 

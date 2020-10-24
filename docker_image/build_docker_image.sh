@@ -18,10 +18,10 @@
 set -x
 
 # target Docker image name
-IMG_NAME=xai
+#IMG_NAME=xai
 
 # existing Docker image tag
-IMG_TAG=latest
+#IMG_TAG=latest
 
 # build Docker image
 docker build -t ${IMG_NAME}:${IMG_TAG} .
