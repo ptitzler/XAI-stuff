@@ -1,7 +1,1 @@
-aix360
-graphviz
-lale
-seaborn
-sklearn
-#tensorflow
-xgboost
+requirements_test.txt
