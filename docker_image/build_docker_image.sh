@@ -17,11 +17,21 @@
 
 set -x
 
-# target Docker image name
-#IMG_NAME=xai
+if [[ -z "${IMG_NAME}" ]]; then
+    if [ "$1" != "" ]; then
+        IMG_NAME=$1
+    else
+        exit 1
+    fi
+fi
 
-# existing Docker image tag
-#IMG_TAG=latest
+# target Docker image tag
+# defaults to `latest`
+IMG_TAG=${IMG_TAG:-latest}
+
+# Dockerfile to be used for build
+# defaults to `Dockerfile`
+DOCKER_FILE=${DOCKER_FILE:-Dockerfile} 
 
 # build Docker image
-docker build -t ${IMG_NAME}:${IMG_TAG} .
+docker build -t ${IMG_NAME}:${IMG_TAG} -f ${DOCKER_FILE} .
