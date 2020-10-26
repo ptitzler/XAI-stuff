@@ -1,0 +1,14 @@
+# Prerequisites for 
+#  - data_load
+#  - data_viz
+#  - explainable_methods
+#  - explainations_rp
+aix360
+lale
+matplotlib
+numpy
+pandas
+requests  
+seaborn
+shap
+sklearn
